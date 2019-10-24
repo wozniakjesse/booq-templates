@@ -1,26 +1,57 @@
-<form action="">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Guest Booking</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">GUEST</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="guestOverview.html">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guestAccount.html">Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guestBooking.html">Booking</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
   <div >
     <h1>BOOK YOUR STAY</h1>
 
-
+    <form class = "container" action="">
     <label for="room_id"><b>ROOM ID</b></label>
     <input type="text" placeholder="ROOM ID" name="room_id" required>
-
+    <br>
     <label for="class_id"><b>CLASS ID</b></label>
     <input type="text" placeholder="CLASS ID" name="class_id">
-
+    <br>
     <label for="cat_id"><b>CAT ID</b></label>
     <input type="text" placeholder="CAT ID" name="cat_id">
-
+    <br>
     <label for="date_in"><b>DATE IN</b></label>
     <input type="date" placeholder="DATE IN" name="DATE_IN" required>
-
+    <br>
     <label for="date_out"><b>DATE OUT</b></label>
     <input type="date" placeholder="DATE OUT" name="DATE_IN" required>
-
+    <br>
     <label for="hotdogs"><b>HOTDOGS</b></label>
     <input type="number" placeholder="HOW MANY HOTDOGS" name="hotdogs">
-
+    <br>
     <label for="pancakes"><b>PANCAKES</b></label>
     <input type="number" placeholder="HOW MANY PANCAKES" name="pancakes">
 
@@ -31,3 +62,4 @@
     </div>
   </div>
 </form>
+</body>

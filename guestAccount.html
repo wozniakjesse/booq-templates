@@ -1,20 +1,52 @@
-<form action="">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Guest Account</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">GUEST</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="guestOverview.html">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guestAccount.html">Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guestBooking.html">Booking</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
   <div >
     <h1>MAKE YOUR ACCOUNT</h1>
 
-
+    <form class = "container" action="">
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
-
+    <br>
     <label for="password"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required>
-
+    <br>
     <label for=""><b>First Name</b></label>
     <input type="firstName" placeholder="First Name" name="firstName" required>
-
+    <br>
     <label for=""><b>Last Name</b></label>
     <input type="lastName" placeholder="Last Name" name="lastName" required>
-
+    <br>
     <label for=""><b>Vibe</b></label>
     <input type="vibe" placeholder="Vibe" name="vibe" >
 
@@ -25,3 +57,5 @@
     </div>
   </div>
 </form>
+
+</body>
