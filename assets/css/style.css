@@ -16,3 +16,12 @@ h3 {
 h1, h2, h3 {
     padding: 10px 20px;
 }
+
+
+.active {
+    background: blueviolet
+}
+
+.nav nav-tabs {
+    background: transparent
+}
