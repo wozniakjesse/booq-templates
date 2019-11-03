@@ -28,9 +28,6 @@
           <li class="nav-item">
             <a class="nav-link" href="guestBooking.html">Booking</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="guestClassBooking.html">Class Booking</a>
-            </li>
         </ul>
       </div>
     </div>
@@ -45,13 +42,63 @@
 
                 <form class = "container" action="">
                     <div class="form-group">
-                        <label for="room_id"><b>ROOM ID</b></label>
-                        <input class="form-control col-12 col-md-6" type="text" placeholder="ROOM ID" name="room_id" required>
+                        <label for="room_id"><b>ROOM</b></label>
+                        <div class="form-group">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input class="form-control" type="radio" name="room_id" value="1" required></td>
+                                        <td>Tha Hustler</td>
+                                        <td>This one has a chair that you can do business with</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-control" type="radio" name="room_id" value="2" required></td>
+                                        <td>The Player's Club</td>
+                                        <td>You already know</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cat_id"><b>CAT</b></label>
+                        <select class="form-control col-12 col-md-6" mame="cat_id" required>
+                            <option value="" selected>None</option>
+                            <option value="1">killa: very tight</option>
+                            <option value="2">killa: very chill</option>
+                        </select>
                         <br>
                     </div>
                     <div class="form-group">
-                        <label for="cat_id"><b>CAT ID</b></label>
-                        <input class="form-control col-12 col-md-6" type="text" placeholder="CAT ID" name="cat_id">
+                        <label for="class"><b>DANCE CLASSES</b></label>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="form-control" name="class[]" value="1"></td>
+                                    <td>Dance Class 1</td>
+                                    <td>Some dummy dance class</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="form-control" name="class[]" value="2"></td>
+                                    <td>Dance Class 2</td>
+                                    <td>Some dummy dance class</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <br>
                     </div>
                     <div class="form-group">
