@@ -16,18 +16,17 @@ h3 {
 h1, h2, h3 {
     padding: 10px 20px;
 }
-
-
-.active {
-    background-color: red;
-    
-}
-
 .nav-tabs li {
-    width: 48%;
-    border-width: 1%;
-    margin: 5px;
+    width: 50%;
     color: black;
-    border: solid;
-
+}
+.nav-tabs li a {
+    background-color: #ccc;
+    color: #000;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+.nav-tabs li.active a {
+    background-color: red;
 }
