@@ -3,183 +3,192 @@ SELECT rooms, SELECT dance_classes, SELECT cats
 WHERE vibe LIKE %userinput%
  -->
 
- <!DOCTYPE html>
- <html lang="en" dir="ltr">
-	 <head>
-		 <meta charset="utf-8">
-		 <title>Guest Overview</title>
-		 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		 <link rel="stylesheet" href="assets/css/style.css">
-	 </head>
-	 <body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-			<ul class="nav nav-tabs account-type-links">
-					<li><a href="bookings.html">BOOQ</a></li>
-					<li class="active"><a href="guestOverview.html">GUEST</a></li>
-				  </ul>
+<head>
+    <meta charset="utf-8">
+    <title>Guest Overview</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container">
-					<a class="navbar-brand" href="#">GUEST</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" href="guestOverview.html">Overview</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="guestAccount.html">Account</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="guestBooking.html">Booking</a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link" href="guestClassBooking.html">Class Booking</a>
-								  </li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-	   <h2>ROOMS</h2>
+<body>
+    <ul class="nav nav-tabs account-type-links">
+        <li><a href="bookings.html">BOOQ</a></li>
+        <li class="active"><a href="guestOverview.html">GUEST</a></li>
+    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">GUEST</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="guestOverview.html">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guestAccount.html">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guestBooking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guestClassBooking.html">Class Booking</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>ROOMS</h2>
 
-	   	<form class = "container" action="">SHOW ALL ROOMS:
-  		<br>
-  			<input type="submit" value="SHOW ALL">
-  		<br> 
-  		</form>
-
-		  <P><P>
-  			
-		<P><P>
-
-	   <form class = "container" action="">SEARCH FOR A SPECIFIC VIBE:
-	   	<br>
-  			<input type="text" name="firstname" value="VIBE">
-  		<br>
-  		<br>
-  			<input type="submit" value="SEARCH">
-  		<br>
-		</form>
-
-          <div >
-            <table class = "table" >
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>NAME</th>
-                  <th>DESCRIPTION</th>
-                </tr>
-              </thead>
-              <tbody>
-					<tr>
-							<td>001</td>
-							<td>Tha Hustler</td>
-							<td>This one has a chair that you can do business with</td>
-		
-						</tr>
-						<tr>
-							<td>002</td>
-							<td>The Player's Club</td>
-							<td>You already know</td>
-						</tr>
-              </tbody>
-            </table>
-          </div>
+                    <form class="section" action="">SHOW ALL ROOMS:
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="SHOW ALL">
+                        <br>
+                    </form>
 
 
-	   <h2>DANCE CLASSES</h2>
+                    <form class="section" action="">SEARCH FOR A SPECIFIC VIBE:
+                        <br>
+                        <input type="text" name="firstname" value="VIBE">
+                        <br>
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="SEARCH">
+                        <br>
+                    </form>
 
-	   	   	<form class = "container" action="">SHOW ALL CLASSES:
-  		<br>
-  			<input type="submit" value="SHOW ALL">
-  		<br> 
-  		</form>
-  		<P><P>
-  			
-		<P><P>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>NAME</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Tha Hustler</td>
+                                    <td>This one has a chair that you can do business with</td>
 
-	   <form class = "container" action="">SEARCH FOR A SPECIFIC VIBE:
-	   	<br>
-  			<input type="text" name="firstname" value="VIBE">
-  		<br>
-  		<br>
-  			<input type="submit" value="SEARCH">
-  		<br>
-		</form>
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>The Player's Club</td>
+                                    <td>You already know</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-          <div >
-            <table class = "table" >
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>NAME</th>
-                  <th>DESCRIPTION</th>
-                </tr>
-              </thead>
-              <tbody>
-				    <tr>
-							<td>001</td>
-							<td>Breaking 101</td>
-							<td>Power Moves and Freezes</td>
-		
-						</tr>
-						<tr>
-							<td>002</td>
-							<td>Breaking 102</td>
-							<td>b-boying</td>
-						</tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>DANCE CLASSES</h2>
 
-	   <h2>CATS</h2>
-
-	   	   	<form class = "container" action="">SHOW ALL CATS:
-  		<br>
-  			<input type="submit" value="SHOW ALL">
-  		<br> 
-  		</form>
-
-  		<P><P>
-  			
-  		<P><P>
-
-	   <form class = "container" action="">SEARCH FOR A SPECIFIC VIBE:
-	   	<br>
-  			<input type="text" name="firstname" value="VIBE">
-  		<br>
-  		<br>
-  			<input type="submit" value="SEARCH">
-  		<br>
-		</form> 
-
-          <div >
-            <table class = "table" >
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>NAME</th>
-                  <th>DESCRIPTION</th>
-                </tr>
-              </thead>
-              <tbody>
-					<tr>
-							<td>001</td>
-							<td>killa </td>
-							<td>very tight</td>
-		
-						</tr>
-						<tr>
-							<td>002</td>
-							<td>killa</td>
-							<td>very chill</td>
-						</tr>
-              </tbody>
-            </table>
-          </div>
+                    <form class="section" action="">SHOW ALL CLASSES:
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="SHOW ALL">
+                        <br>
+                    </form>
 
 
+                    <form class="section" action="">SEARCH FOR A SPECIFIC VIBE:
+                        <br>
+                        <input type="text" name="firstname" value="VIBE">
+                        <br>
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="SEARCH">
+                        <br>
+                    </form>
+
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>NAME</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Breaking 101</td>
+                                    <td>Power Moves and Freezes</td>
+
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>Breaking 102</td>
+                                    <td>b-boying</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>CATS</h2>
+
+                    <form class="section" action="">SHOW ALL CATS:
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="SHOW ALL">
+                        <br>
+                    </form>
+
+
+                    <form class="section" action="">SEARCH FOR A SPECIFIC VIBE:
+                        <br>
+                        <input type="text" name="firstname" value="VIBE">
+                        <br>
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="SEARCH">
+                        <br>
+                    </form>
+
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>NAME</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>killa </td>
+                                    <td>very tight</td>
+
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>killa</td>
+                                    <td>very chill</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

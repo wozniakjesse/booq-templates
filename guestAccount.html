@@ -36,33 +36,46 @@
       </div>
     </div>
   </nav>
-  
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>MAKE YOUR ACCOUNT</h1>
 
-  <div >
-    <h1>MAKE YOUR ACCOUNT</h1>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="email"><b>Email</b></label>
+                            <input class="form-control col-12 col-md-6" type="text" placeholder="Enter Email" name="email" required>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="password"><b>Password</b></label>
+                            <input class="form-control col-12 col-md-6" type="password" placeholder="Enter Password" name="password" required>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for=""><b>First Name</b></label>
+                            <input class="form-control col-12 col-md-6" type="firstName" placeholder="First Name" name="firstName" required>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for=""><b>Last Name</b></label>
+                            <input class="form-control col-12 col-md-6" type="lastName" placeholder="Last Name" name="lastName" required>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for=""><b>Vibe</b></label>
+                            <input class="form-control col-12 col-md-6" type="vibe" placeholder="Vibe" name="vibe" >
+                        </div>
 
-    <form class = "container" action="">
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <br>
-    <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
-    <br>
-    <label for=""><b>First Name</b></label>
-    <input type="firstName" placeholder="First Name" name="firstName" required>
-    <br>
-    <label for=""><b>Last Name</b></label>
-    <input type="lastName" placeholder="Last Name" name="lastName" required>
-    <br>
-    <label for=""><b>Vibe</b></label>
-    <input type="vibe" placeholder="Vibe" name="vibe" >
 
-
-    <div>
-      <button type="button"> Cancel </button>
-      <button type="submit"> Sign Up</button>
-    </div>
-  </div>
-</form>
-
+                        <div>
+                          <button class="btn btn-danger" type="button"> Cancel </button>
+                          <button class="btn btn-primary" type="submit"> Sign Up</button>
+                        </div>        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>

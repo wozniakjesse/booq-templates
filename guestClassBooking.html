@@ -36,24 +36,29 @@
     </div>
   </nav>
   
-
-  <div >
-    <h1>BOOK YOUR CLASS</h1>
-
-    <form class = "container" action="">
-    <label for="booking_id"><b>BOOKING ID</b></label>
-    <input type="text" placeholder="BOOKING ID" name="room_id" required>
-    <br>
-    <label for="class_id"><b>CLASS ID</b></label>
-    <input type="text" placeholder="CLASS ID" name="class_id">
-    <br>
-
-
-
-    <div>
-      <button type="button"> Cancel </button>
-      <button type="submit"> ADD A CLASS TO MY BOOKING </button>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>BOOK YOUR CLASS</h1>
+                <form class = "container" action="">
+                    <div class="form-group">
+                        <label for="booking_id"><b>BOOKING ID</b></label>
+                        <input class="form-control col-12 col-md-6" type="text" placeholder="BOOKING ID" name="room_id" required>
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="class_id"><b>CLASS ID</b></label>
+                        <input class="form-control col-12 col-md-6" type="text" placeholder="CLASS ID" name="class_id">
+                        <br>
+                    </div>
+                    <div>
+                      <button class="btn btn-danger" type="button"> Cancel </button>
+                      <button class="btn btn-primary" type="submit"> ADD A CLASS TO MY BOOKING </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
-</form>
+</main>
 </body>
